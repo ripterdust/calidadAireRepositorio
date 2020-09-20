@@ -34,6 +34,12 @@ a {
   color: #fff;
   font-size: 15px;
 }
+.nav .spacing {
+  transition: 0.2s ease-in;
+}
+.nav .spacing:hover {
+  letter-spacing: 5px;
+}
 
 .header {
   height: 50vh;
@@ -70,6 +76,7 @@ a {
 .header .text .title {
   text-transform: uppercase;
   font-weight: 600;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */
