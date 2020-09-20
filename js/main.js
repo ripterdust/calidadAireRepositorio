@@ -1,6 +1,5 @@
 // Clases
 // FIXME - Modularizar cada clase para no tener problema
-// ANCHOR - clase de alumno
 class Alumno{
     constructor(nombre, carnet){
         this.nombre = nombre;
@@ -14,8 +13,6 @@ class Alumno{
         });
     }
 }
-
-// ANCHOR - clase de las gráficas
 
 class Estacion{
     constructor(apiLink){
@@ -34,6 +31,8 @@ class Estacion{
     }
 }
 
+
+// NOTE - Instanciando clases.
 // Instanciando alumnos
 const bryan = new Alumno('Bryan Arévalo', 201945176);
 const luis = new Alumno('Luis Pinzón', 5213581);
