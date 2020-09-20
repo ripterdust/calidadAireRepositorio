@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 .nav {
   position: absolute;
   top: 0;
@@ -34,9 +39,11 @@
   align-items: center;
 }
 .alumnos a {
-  text-decoration: none;
-  color: #333;
   text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+.alumnos a:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */
