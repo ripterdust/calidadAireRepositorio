@@ -21,15 +21,12 @@ class Estacion{
     }
 
     get datosEstacion(){
-        var datos;
         fetch(this.__link)
             .then(res => res.json())
             .catch(err => console.log(err))
             .then(data => { 
-                datos = data;
+                datosGrafica.push(data.feeds[0].field1);
             });
-        console.log(datos)
-        return datos;
     }
 }
 
@@ -39,10 +36,15 @@ class Estacion{
 const bryan = new Alumno('Bryan Arévalo', 201945176);
 const luis = new Alumno('Luis Pinzón', 5213581);
 
-console.log(bryan.datos.nombre);
 
 // Instanciando estaciones
-let linkBryan = 'https://api.thingspeak.com/channels/1147595/feeds.json?results=2';
-const estacionBryan = new Estacion(linkBryan);
-console.log(estacionBryan.datosEstacion);
-    
+var linkBryan = 'https://api.thingspeak.com/channels/1147595/feeds.json?results=2';
+const estacionBryan = new Estacion(linkBryan);    
+
+// Creando las gráficas
+// Actualizando las gráficas
+// setInterval(function(){ 
+//     estacionBryan.datosEstacion
+//     console.log(datosGrafica)
+// }, 1000);
+
