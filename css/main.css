@@ -10,6 +10,10 @@ a {
   color: #333;
 }
 
+body {
+  background: #ecf0f1;
+}
+
 .nav {
   top: 0;
   left: 0;
@@ -77,6 +81,18 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   position: relative;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  background: #fff;
+  margin-top: 1em;
+}
+.container .student {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+// Variables
+$blue: #3498db;
+$grisClaro: #ecf0f1;
+$darkBlue: #2980b9;
 // Ajustes globales
 
 *{
@@ -12,11 +16,11 @@ a {
     text-decoration: none;
     color: #333;
 }
+body{
+    background: $grisClaro;
+}
 
-// Variables
-$blue: #3498db;
-$grisClaro: #ecf0f1;
-$darkBlue: #2980b9;
+
 // Barra de navegación
 .nav{
     top: 0;
@@ -98,5 +102,16 @@ $darkBlue: #2980b9;
 }
 
 .container{
-    
+    width: 95%;
+    margin: auto;
+    background: #fff;
+    margin-top: 1em;
+    .student{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .name{
+
+        }
+    }
 }
