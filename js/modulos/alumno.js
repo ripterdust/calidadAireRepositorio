@@ -12,5 +12,3 @@ class Alumno{
     }
 }
 
-
-export default Alumno;
