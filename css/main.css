@@ -122,6 +122,8 @@ body {
   font-size: 30px;
   padding: 0.3em;
   z-index: 1;
+  display: none;
+  transition: 0.3s ease-in;
 }
 .fBtn:hover {
   cursor: pointer;

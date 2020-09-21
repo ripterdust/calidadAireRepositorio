@@ -143,6 +143,8 @@ body{
     font-size: 30px;
     padding: .3em;
     z-index: 1;
+    display: none;
+    transition: .3s ease-in;
     &:hover{
         cursor: pointer;
     }
