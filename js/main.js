@@ -19,7 +19,7 @@ new Morris.Line({
     // chart.
     labels: ['temperatura', 'humedad'],
     resize: true,
-    lineColors: ['#C14D9F', '#2CB4AC'],
+    lineColors: ['#3498db', '#2CB4AC'],
     lineWidth: 2
   });
 
@@ -45,6 +45,6 @@ new Morris.Line({
     // chart.
     labels: ['temperatura', 'humedad'],
     resize: true,
-    lineColors: ['#C14D9F', '#2CB4AC'],
+    lineColors: ['#3498db', '#2CB4AC'],
     lineWidth: 2
   });
