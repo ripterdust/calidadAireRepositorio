@@ -134,10 +134,54 @@ body{
 // Floating BTN styles
 
 .fBtn{
-    position: absolute;
-    background: &darkBlue;
-    bottom: 1em;
-    right: 1em;
-    width: 10em;
-    height: 10em;
+    position: fixed;
+    background: $darkBlue;
+    bottom: 2em;
+    right: 2em;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: .3em;
+    z-index: 1;
+    &:hover{
+        cursor: pointer;
+    }
+
+    &::before{
+        content: "";
+        width: 90%;
+        height: 90%;
+        border: 3px solid $darkBlue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        animation: btnShadowAnimation 1s linear infinite;
+        z-index: -1;
+    }
+    &::after{
+        content: "";
+        width: 90%;
+        height: 90%;
+        border: 3px solid $darkBlue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        animation: btnShadowAnimation 1s linear infinite;
+        animation-delay: .3s;
+        z-index: -1;
+    }
 }
+
+
+@keyframes btnShadowAnimation {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+

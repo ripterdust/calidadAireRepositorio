@@ -113,12 +113,53 @@ body {
 }
 
 .fBtn {
+  position: fixed;
+  background: #2980b9;
+  bottom: 2em;
+  right: 2em;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 0.3em;
+  z-index: 1;
+}
+.fBtn:hover {
+  cursor: pointer;
+}
+.fBtn::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  border: 3px solid #2980b9;
   position: absolute;
-  background: .fBtn darkBlue;
-  bottom: 1em;
-  right: 1em;
-  width: 10em;
-  height: 10em;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  animation: btnShadowAnimation 1s linear infinite;
+  z-index: -1;
+}
+.fBtn::after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  border: 3px solid #2980b9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  animation: btnShadowAnimation 1s linear infinite;
+  animation-delay: 0.3s;
+  z-index: -1;
+}
+
+@keyframes btnShadowAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
