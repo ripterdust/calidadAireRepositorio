@@ -122,9 +122,22 @@ body{
         }
     }
     .graficas {
+        margin-top: 1em;
         display: grid;
         width: 80%;
         grid-template-columns: 48% 48%;
         grid-column-gap: 4%;
     }
+}
+
+
+// Floating BTN styles
+
+.fBtn{
+    position: absolute;
+    background: &darkBlue;
+    bottom: 1em;
+    right: 1em;
+    width: 10em;
+    height: 10em;
 }
