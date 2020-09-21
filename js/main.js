@@ -132,22 +132,20 @@ new Morris.Line({
 // Obteniendo datos
 
 let urlDatosIniciales = 'https://api.thingspeak.com/channels/1147595/fields/1.json?results=3';
-
-
+let urlActualizacion = 'https://api.thingspeak.com/channels/1147595/status.json';
+let datos = [];
 getData = (link) => {
   fetch(link)
     .then(res => res.json())
     .catch(err => console.log(err))
-    .then(data => console.log(data));
+    .then(data => console.log(data.feeds));
 }
-
 getData(urlDatosIniciales);
-let boolean;
-let contador = 0;
 (() => {
+console.log('De acá en adelante ya es la función que se repite indefinidamente');
+
   setInterval(() => {
-    console.log(contador);
-    contador += 1;
+    // getData(urlActualizacion);
   }, 3000)
 })();
 
