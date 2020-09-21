@@ -1,10 +1,11 @@
+
 // NOTE - Función scroll página
 let btn = document.querySelector('.fBtn');
-window.onscroll = () =>{
-  if(document.documentElement.scrollTop >= 100) {
+window.onscroll = () => {
+  if (document.documentElement.scrollTop >= 100) {
     btn.style.display = 'inline';
 
-  }else{
+  } else {
     btn.style.display = 'none';
 
   }
@@ -41,7 +42,7 @@ new Morris.Line({
   hideHover: true
 
 });
-  // ANCHOR - Gráfica de partículas
+// ANCHOR - Gráfica de partículas
 
 new Morris.Line({
   // ID of the element in which to draw the chart.
@@ -49,11 +50,11 @@ new Morris.Line({
   // Chart data records -- each entry in this array corresponds to a point on
   // the chart.
   data: [
-    { year: '2008', value: 3000},
-    { year: '2009', value: 4500},
-    { year: '2010', value: 3500},
-    { year: '2011', value: 3800},
-    { year: '2012', value: 2500}
+    { year: '2008', value: 3000 },
+    { year: '2009', value: 4500 },
+    { year: '2010', value: 3500 },
+    { year: '2011', value: 3800 },
+    { year: '2012', value: 2500 }
   ],
   // The name of the data record attribute that contains x-values.
   xkey: 'year',
@@ -101,7 +102,7 @@ new Morris.Line({
 
 });
 
-  // ANCHOR - Gráfica de partículas
+// ANCHOR - Gráfica de partículas
 
 new Morris.Line({
   // ID of the element in which to draw the chart.
@@ -109,11 +110,11 @@ new Morris.Line({
   // Chart data records -- each entry in this array corresponds to a point on
   // the chart.
   data: [
-    { year: '2008', value: 3900},
-    { year: '2009', value: 3100},
-    { year: '2010', value: 2500},
-    { year: '2011', value: 400},
-    { year: '2012', value: 1500}
+    { year: '2008', value: 3900 },
+    { year: '2009', value: 3100 },
+    { year: '2010', value: 2500 },
+    { year: '2011', value: 400 },
+    { year: '2012', value: 1500 }
   ],
   // The name of the data record attribute that contains x-values.
   xkey: 'year',
@@ -127,3 +128,26 @@ new Morris.Line({
   lineWidth: 2,
   hideHover: true
 });
+
+// Obteniendo datos
+
+let urlDatosIniciales = 'https://api.thingspeak.com/channels/1147595/fields/1.json?results=3';
+
+
+getData = (link) => {
+  fetch(link)
+    .then(res => res.json())
+    .catch(err => console.log(err))
+    .then(data => console.log(data));
+}
+
+getData(urlDatosIniciales);
+let boolean;
+let contador = 0;
+(() => {
+  setInterval(() => {
+    console.log(contador);
+    contador += 1;
+  }, 3000)
+})();
+
