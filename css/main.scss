@@ -121,4 +121,10 @@ body{
             font-size: 20px;
         }
     }
+    .graficas {
+        display: grid;
+        width: 80%;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+    }
 }

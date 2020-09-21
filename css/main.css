@@ -104,5 +104,11 @@ body {
   text-align: center;
   font-size: 20px;
 }
+.container .graficas {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
 
 /*# sourceMappingURL=main.css.map */
