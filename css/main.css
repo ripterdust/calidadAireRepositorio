@@ -29,6 +29,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 20px;
+  z-index: 1;
 }
 .nav .names {
   display: flex;
@@ -162,6 +163,14 @@ body {
     transform: scale(1.5);
     opacity: 0;
   }
+}
+footer {
+  width: 100%;
+  background: #3498db;
+  margin-top: 2em;
+  padding: 1em 0;
+  text-align: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

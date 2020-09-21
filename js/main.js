@@ -1,11 +1,12 @@
 // NOTE - Función scroll página
 let btn = document.querySelector('.fBtn');
 window.onscroll = () =>{
-  console.log(document.documentElement.scrollTop)
   if(document.documentElement.scrollTop >= 100) {
     btn.style.display = 'inline';
+
   }else{
     btn.style.display = 'none';
+
   }
 }
 
