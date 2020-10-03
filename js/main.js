@@ -25,9 +25,9 @@ new Morris.Line({
   data: [
     { year: '2008', value: 20, value2: 30 },
     { year: '2009', value: 10, value2: 40 },
-    { year: '2010', value: 5, value2: 50 },
+    { year: '2010', value: 5, value2: 0 },
     { year: '2011', value: 5, value2: 10 },
-    { year: '2012', value: 20, value2: 20 }
+    { year: '2012', value: 9, value2: 10}
   ],
   // The name of the data record attribute that contains x-values.
   xkey: 'year',
@@ -74,7 +74,6 @@ new Morris.Line({
 // SECTION - Gráficas Luis
 
 // ANCHOR - Gráfica de temperatura y humedad
-
 
 new Morris.Line({
   // ID of the element in which to draw the chart.
