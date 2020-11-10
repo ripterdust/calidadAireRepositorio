@@ -114,6 +114,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.container .student .box {
+  width: 100%;
+  height: 5vh;
+}
+
 .fBtn {
   position: fixed;
   background: #2980b9;

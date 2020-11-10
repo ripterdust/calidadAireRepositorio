@@ -23,17 +23,14 @@ var myChart = new Chart(ctx, {
             label: 'Humedad relativa',
             data: [69.9, 70.4, 70.87],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)'
+                'rgba(46, 204, 113, 0.5)',
+                'rgba(231, 76, 60,0.5)',
+                'rgba(255, 206, 86, 0.5)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(46, 204, 113,1.0)',
+                'rgba(231, 76, 60,1.0)',
+                'rgba(255, 206, 86, 1)'
             ],
             borderWidth: 1
         }]
@@ -56,20 +53,17 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Nivel del suelo', '1 metro', '2 metros'],
         datasets: [{
-            label: 'Humedad relativa',
-            data: [69.9, 70.4, 70.87],
+            label: 'Partículas por millón',
+            data: [3063.2, 2531, 2177.13],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)'
+                'rgba(41, 128, 185, 0.5)',
+                'rgba(211, 84, 0, 0.5)',
+                'rgba(142, 68, 173,0.5)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(41, 128, 185,1.0)',
+                'rgba(211, 84, 0,1.0)',
+                'rgba(142, 68, 173,1.0)'
             ],
             borderWidth: 1
         }]
